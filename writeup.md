@@ -26,19 +26,20 @@ My pipeline consisted of 8 steps. Each step is as follows.
 <br>
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function like following.
 
->6) Reject the suspecious data by checking magnitude of line gradient (set 0.5 as a mimum gradient otherwise it's rejected) <br>
->7) Classify each data into left side or right side <>
+>6) Reject the suspecious data by checking magnitude of line gradient (set 0.5 as a mimum magnitude of gradient otherwise it's rejected) <br>
+>7) Classify each data into left side or right side <br>
 >8) Estimate the line by using `least square method` to have reasonable estimation result <br>
 >9) Draw detected line & estimated line (detected line: <span style="color: blue; ">blue</span>, estimated line: <span style="color: red; ">red</span>) <br>
 >10) Put the legend in the upper left <br>
 
 <br>
-Since there were many undesirable edges due to the shadow in optional challenge, '6)' is added as a countermeasure for those edges. Countermeasure was working as expected and could get better estimation like bellow picture.
+Since there were many undesirable edges due to the shadow in optional challenge, '6' is added as a countermeasure for those edges. Countermeasure was working as expected and could get better estimation like bellow picture.
 
 <div style="text-align:center">
 <img src="./report/effect_countermeasure_6.png">
 </div>
 <br>
+
 
 ### 2. Identify potential shortcomings with your current pipeline
 
