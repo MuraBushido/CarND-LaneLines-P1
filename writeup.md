@@ -51,7 +51,7 @@ Potential shortcoming is as follows.
 ><img src="./report/limitation_of_assumption.png">
 ></div>
 >2) Limitation of edge detection using illuminance channel <br>
->-> We faced the issue that line detection is NOT detected in optional challenge due to less gradient in illuminance. Below picture is an example of this issue. <br>
+>-> We faced the issue that the line is NOT detected in optional challenge due to less gradient in illuminance. Below picture is an example of this issue. <br>
 ><div style="text-align:center">
 ><img src="./report/no_line_detection.png">
 ></div>
